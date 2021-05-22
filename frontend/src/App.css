@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'alexana';
+  src: url('fonts/Alexana.ttf');
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0c0d37, #411e53);
+  padding: 2vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+header {
+  display: inline-block;
+  margin-bottom: 5vw;
+}
+
+h1 {
+  font-family: 'alexana';
+  color: white;
+  margin: 0;
+  position: relative;
+}
+
+p {
+  color: white;
+  margin: 0;
+  letter-spacing: .6rem;
+  text-align: center;
+}
+
+.plateau_container {
+  width: 70vw;
+  background-color: #131313;
+  margin: 0 auto;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plateau {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 50%;
+  background-color: violet;
+}
+.item {
+  background-color: turquoise;
+}
