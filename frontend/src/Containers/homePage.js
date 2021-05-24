@@ -6,7 +6,7 @@ const HomePage = () => {
         <>
             <header>
                 <h1>MARS ROVERS</h1>
-                <p>DISCOVERY</p>
+                <p className="p_logo">DISCOVERY</p>
             </header>
             <PlateauContainer />
         </>
