@@ -293,8 +293,8 @@ const PlateauContainer = () => {
                     <option value="0">Je n'ai pas de fichier de configuration</option>
                 </select>
                 {file === "0" && <form className="mb-3" onSubmit={handleSubmitInputText}>
-                    <textarea className="form-control mb-3" name="inputText" placeholder="Défini la taille du plateau, Place ta rover, Déplace ta rover" rows="3"></textarea>
-                    <button type="submit" className="btn btn-primary">Go !</button>
+                    <textarea className="form-control mb-3" id="inputText" name="inputText" placeholder="Défini la taille du plateau, Place ta rover, Déplace ta rover" rows="3"></textarea>
+                    <button type="submit" className="btn btn-primary" id="submitInput">Go !</button>
                 </form>}
                 {file === "1" && <div className="input-group mb-3">
                     <input type="file" className="form-control" onChange={handleChangeTextFile} id="inputGroupFile02" accept='text/plain' />
@@ -303,7 +303,7 @@ const PlateauContainer = () => {
                 {newPosition.length !== 0 && <> 
                     <h3>Résumer de l'expédition</h3>
                     <p>Nouvelles positions des rovers : </p>
-                    <ul>
+                    <ul id="listResult">
                         { newPosition.map((rover, i) => <li key={i}>Rover {i+1} : {rover}</li>  ) }
                     </ul>
                 </>}
